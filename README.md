@@ -12,3 +12,6 @@ Code I wrote while learning the basics of deno
  * The output of above process is stored in **affiliate_products.json**
  * **affiliate_data_server.ts** is a simple API Server that exposes the above file
  * All files ending in _ **test** are part of the test suite
+
+# Learning source :
+https://github.com/bricewilson
