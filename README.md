@@ -3,7 +3,7 @@ Code I wrote while learning the basics of deno
  # Files Map :
  * **simple_server.ts** is the first file that is run(as mentioned in documentation) while setting up deno
  * **links.txt** stores a few key learnings (and commands)
- * **products.ts* houses the interface (like a class) on which the rest of the files depend
+ * **products.ts** houses the interface (like a class) on which the rest of the files depend
  * **deps.ts** house the dependency map for imports (and makes importing more managable)
  * **affiliate_data.ts** exports an "affiliate_id to data" mapping function ( To simulate fetching data from external sources)
  * **products.json** is the same data used above
