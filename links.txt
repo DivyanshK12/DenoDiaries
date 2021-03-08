@@ -1,0 +1,35 @@
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
+* https://developer.mozilla.org/en-US/docs/Web/API
+* --no-check disables type checking
+- --watch (or something) auto recompiles on changes, it is unstable so use --unstable along with it
+* final command was :
+deno run --watch --unstable --allow-net --no-check simple_server.ts
+
+* --allow-all disables all security checks
+* --allow-net=pluralsight.com,singlesight.com (and so on csl)
+* --allow-read=data.json to limit access to file system
+* --allow-write=. writes to current directory
+
+deno run --allow-net=raw.githubusercontent.com --allow-write=affiliate_proucts.json process_affiliate_data.ts 50
+
+* import_maps are unstable
+
+set DENO_DIR=./cache (In powershell)
+deno cache --lock=lock.json --lock-write process_affiliate_data.ts
+deno run --allow-net --allow-write --lock=lock.json process_affiliate_data.ts 5
+
+cache --reload process_affiliate_data.ts // redownloads all dependencies in cache
+
+do not import files/modules with a leadin underscore in the name
+do not import files/modules wit test in their name
+
+deno test // runs all files with _test at end
+// can pass filename as cli arguement
+
+deno fmt // format files
+--check to allow you to review those changes
+
+deno lint --unstable --rules // to see all the linting rules
+deno-lint-ignore-file ignores file
+
+deno install --allow-net --allow-read --root . --name data_srv affiliate_data_server.ts
