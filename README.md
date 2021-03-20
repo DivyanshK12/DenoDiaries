@@ -1,4 +1,4 @@
-# DeoDiaries
+# DenoDiaries
 Code I wrote while learning the basics of deno
  # Files Map :
  * **simple_server.ts** is the first file that is run(as mentioned in documentation) while setting up deno
